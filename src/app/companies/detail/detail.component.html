@@ -1,0 +1,26 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{companySelected}}</li>
+    </ol>
+  </nav>
+<table class="table table-responsive">
+    <thead>
+        <th>Nombre Cliente</th>
+        <th>Personas</th>
+        <th>Día</th>
+        <th>Hora</th>
+        <th>Valor Venta</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sale of sales.sales;let indexOfelement=index;">
+            <td>{{sale.name}}</td>
+            <td>{{ sale.persons | number  }}</td>
+            <td>{{ sale.day }}</td>
+            <td>{{ sale.hour }}</td>
+            <td>{{sale.finalPrice | number}}</td>
+        </tr>
+    </tbody>
+    
+
+</table>

@@ -1,0 +1,21 @@
+<app-indicators-dashboard></app-indicators-dashboard>
+<br>
+<br>
+<table class="table table-responsive">
+    <thead>
+        <th>Nombre Empresa</th>
+        <th>Total Ventas</th>
+        <th>Comisión</th>
+        <th>Detalle</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sale of sales;let indexOfelement=index;">
+            <td>{{sale[0]}}</td>
+            <td>{{ sale[1].total | number  }}</td>
+            <td>{{ "" }}</td>
+            <td><a (click)="selectCompany(sale[0])" class="nav-link" href="#detail" routerLink="/detail">Detalle</a></td>
+        </tr>
+    </tbody>
+    
+
+</table>
