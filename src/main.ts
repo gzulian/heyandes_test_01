@@ -10,7 +10,7 @@ import { environment } from './environments/environment';
 
 var admin = require("firebase-admin");
 
-var serviceAccount = require("path/to/serviceAccountKey.json");
+var serviceAccount = require("heyandes-test-gzulian-firebase-adminsdk-4dulc-0bf4e12126.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
