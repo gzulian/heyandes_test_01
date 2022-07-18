@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/heyandes_test_gzulian",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -14,6 +14,6 @@
     ]
   },
   "remoteconfig": {
-    "template": "remoteconfig.template.json"
+    "template": "heyandes-test-gzulian-firebase-adminsdk-4dulc-0bf4e12126.json"
   }
 }
